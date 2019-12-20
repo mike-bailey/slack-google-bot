@@ -4,7 +4,7 @@ gem 'celluloid-io'
 gem 'slack-ruby-bot'
 gem 'puma'
 gem 'http'
-gem 'sinatra'
+gem 'sinatra', '>= 1.4.7'
 gem 'faraday_middleware', '0.10.1'
 
 group :development, :test do
@@ -15,7 +15,7 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'rack-test'
+  gem 'rack-test', '>= 0.6.3'
   gem 'vcr'
   gem 'webmock', require: 'webmock/rspec'
 end
